@@ -1,0 +1,87 @@
+body {
+  background-image: url(/img/Journal.jpg);
+  background-size: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poiret One', 'cursive';
+}
+.logo{
+  image-resolution: 50%;
+  border: 1px solid #ddd;
+  border-radius: 20%;
+  padding: 3px;
+  display: inline;
+}
+.name {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0px 10px;
+  text-align: center;
+  font-family: 'Poiret One', 'cursive';
+  color: #fff;
+  text-shadow: 1px 1px 1px #272121;
+
+}
+h2{
+  font-size: 50px;
+  margin: 10px;
+  color: rgb(32, 23, 12);
+  text-shadow: 2px 2px 4px #272121;
+  -webkit-text-stroke: #e0c260 0.8px;
+  text-align: center;
+  
+}
+.container {
+  border: 2px #925E49 solid;
+  width: 500px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color:#ffebcf;
+  background-image: linear-gradient(225deg, #ffebcf 0%, #edb08c 19%, #d68c74 39%, #d68c74 60%, #edb08c 80%, #ffebcf 100%); 
+  box-shadow: 10px 10px 10px #30211dbb;
+  margin: 50px;
+  color:#690624;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+fieldset{
+  margin: 10px;
+  background-color: #e9d5932f;
+  border: #925E49 solid 2px;
+  border-radius:5px;
+}
+.footer {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+
+button{
+  background-color: #e9d5932f;
+  border: #925E49 solid 2px;
+  border-radius:5px;
+  color: white;
+  padding: 5px 20px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #272121;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color:#e0c260da; 
+  color:#fff;
+}
+.listComponent{
+  color: #fff;
+  text-shadow: 1px 1px 1px #272121;
+}
