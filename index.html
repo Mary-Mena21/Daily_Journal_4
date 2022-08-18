@@ -21,7 +21,7 @@
       <img class="logo" 
         src="img/Daily_Journal_Logo.jpeg"
         alt="Daily_Journal_Logo"
-        style="width: 20%; height: 20%"
+        style="width: 15%; height: 15%"
       />
       <form class="entryForm">
       <section class="quoteBlockForm">
@@ -30,73 +30,66 @@
       </section>
       <hr />
     </header>
-    <main>
+    <main >
+
       <section class="entry">
         <h2>Daily Journal</h2>
           <fieldset class="entry__date">
             <label for="entryDate">Date</label>
-            <input type="date" name="entryDate" class="entryForm__date" />
+            <input class ="inputStyle" type="date" name="entryDate" class="entryForm__date" />
           </fieldset>
           <fieldset class="entry__concepts">
             <label for="entryDate">Concept Covered</label>
-            <input type="text" name="entryDate" class="entryForm__date" />
+            <input class ="inputStyle" type="text" name="entryDate" class="entryForm__date" />
           </fieldset>
           <fieldset class="entry__learn">
-            <label for="entryDate">Journal Entry</label>
-            <textarea type="text" name="entryDate" rows="4" cols="30">
+            <label   for="entryDate">Journal Entry</label>
+            <textarea class ="inputStyle" type="text" name="entryDate" rows="10" >
             </textarea>
           </fieldset>
-          <fieldset class="entry__mood">
+
+           <fieldset class="entry__mood">
             <label for="entryDate">Mood of the day</label>
-            <select name="mood" id="mood">
-              <option value="Happy">Happy</option>
-              <option value="ok">ok</option>
-              <option value="Sad">Sad</option>
-            </select>
+            <select class ="inputStyle" name="mood" id="mood"> </select>
           </fieldset>
+
           <section class="entry__button">
-            <button type="button">Record Journal Entry</button>
+            <button  type="button">Record Journal Entry</button>
           </section>
         </form>
       </section>
-      <section class="listComponent">
-        <ul>
-          <li>
-            Lorem ipsum dolor sit amet.
-            <button type="button">Edit</button>
-            <button type="button">Delete</button>
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet.
-            <button type="button">Edit</button>
-            <button type="button">Delete</button>
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet.
-            <button type="button">Edit</button>
-            <button type="button">Delete</button>
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet.
-            <button type="button">Edit</button>
-            <button type="button">Delete</button>
-          </li>
-        </ul>
+      <section class= "content" id ="content"></section>
+
+      <section class="entry__button">
+        <button class = "add" type="button">Record Quote</button>
       </section>
-      <section class="listComponent__button">
-        <article class="button__delete"></article>
-        <article class="button__edit"></article>
-      </section>
+      <fieldset class="entry__learn">
+        <label   for="entryDate">Quote Entry</label>
+
+        <div class="old-entires">
+
+        <div class="new-entry ">
+          
+          <input type="text" class="new-entry inputStyle">
+      </div>
+
+      </fieldset>
+      <section id="listComponent"></section>
+
+      <div class="entry flex f-ac"></div>
+
       <article id="entries"></article>
     </main>
-    <h1 id ="content"></h1>
+
     <footer class="footer">
       <hr />
-      <a href="http://https://github.com/Mary-Mena21/Daily_Journal"> 
+      <a href="https://github.com/Mary-Mena21/Daily_Journal_3"> 
         <p><i class="fa fa-github fa-2x"></i>
           https://github.com/Mary-Mena21</p></a>
+          <br>
       <p>&copy; 2022 NSS.com</p>
     </footer>
+
   </section>
     <!-- script -->
     <script type="module" src="/scripts/main.js"></script>
