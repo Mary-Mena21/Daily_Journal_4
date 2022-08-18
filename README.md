@@ -1,3 +1,4 @@
+
 # Daily_Journal
 Daily_Journal_Mariana
 
@@ -101,3 +102,4 @@ Here's some things you can try with your journal AFTER you finish the above. You
     - Display the background color on your favorite cards different from the non-favorites
     - Display the favorite entries at the top
     - Display the favorite entries on the sidebar/new view
+
