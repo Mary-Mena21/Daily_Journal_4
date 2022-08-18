@@ -23,7 +23,7 @@ body {
 }
 .name {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     margin: 0px 10px;
     text-align: center;
     font-family: "Poiret One", "cursive";
@@ -31,16 +31,16 @@ body {
     text-shadow: 1px 1px 1px #272121;
 }
 h2 {
-    font-size: 80px;
+    font-size: 60px;
     margin: 10px;
-    color: rgb(32, 23, 12);
+    color:#551A8B/*  rgb(32, 23, 12) */;
     text-shadow: 2px 2px 4px #272121;
-    -webkit-text-stroke: #e0c260 0.8px;
+    /* -webkit-text-stroke: #e0c260 0.8px; */
     text-align: center;
 }
 .container {
     border: 2px #925e49 solid;
-    max-width: 1800px;
+    max-width: 1000px;
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -68,8 +68,8 @@ fieldset {
     background-color: #e9d5932f;
     border: #925e49 solid 2px;
     border-radius: 5px;
-    padding: 20px;
-    font-size: 35px;
+    padding: 10px;
+    font-size: 30px;
 
     /* text-align: center; */
 }
@@ -79,9 +79,9 @@ label {
 }
 
 .inputStyle {
-    height: 80px;
-    font-size: 30px;
-    margin: 10px 0px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px 0px;
     padding: 10px;
 }
 
@@ -105,12 +105,12 @@ button {
     text-align: center;
     text-decoration: none;
     /*  display: inline-block; */
-    height: 100px;
+    height: 60px;
     cursor: pointer;
     text-shadow: 1px 1px 1px #272121;
     transition-duration: 0.4s;
-    font-size: 40px;
-    margin-top: 50px;
+    font-size: 30px;
+    margin-top: 30px;
 }
 button:hover {
     background-color: #e0c260da;
