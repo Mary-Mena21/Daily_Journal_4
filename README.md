@@ -1,5 +1,5 @@
 
-# Daily_Journal
+# Daily_Journal_3
 ![Daily_Journal_3](https://user-images.githubusercontent.com/85176043/185466373-4e5f2c06-7ee8-4d77-bb56-696bbbe0f62c.jpeg)
 
 # **Daily Journal Part 3**
