@@ -22,7 +22,8 @@ const getQuotes = () => {
 
 export default getQuotes; */
 
-export const getQuotes = () => {
-    const copyDataList = dataList.map((quote) => ({ ...quote }));
+ export const getQuotes = () => {
+     const copyDataList = dataList.map((quote) => ({ ...quote }));
+     console.log("copyDataList : ", copyDataList);
     return copyDataList;
-};
+}; 

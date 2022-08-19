@@ -1,14 +1,16 @@
 /* --------------------------------------Import----------------------------------     */
 
-import { getQuotes } from "./quotes";
-import { getNotes } from "./notes";
+import { getQuotes } from "./quotes.js";
+import { getNotes } from "./notes.js";
+import { getMoods } from "./moods.js";
 /* --------------------------------------Mood-----------------------------------     */
 const displayMoods = () => {
-    const moodOptions = ["Happy", "Ok", "Sad", "Curious", "Unhappy"];
-    let Options = "";
+    //const moodOptions = ["Happy", "Ok", "Sad", "Curious", "Unhappy"];
+    const moodOptions = getMoods();
+    
+    let Options = ` `;
     for (let mood of moodOptions) {
-        Options += `
-    <option value="${mood}">${mood}</option>`;
+        Options += `<option value="${mood}">${mood}</option>`;
     }
     document.getElementById("mood").innerHTML = Options;
 };
