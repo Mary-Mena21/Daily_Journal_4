@@ -2,7 +2,7 @@
 
 /* export  */ const dataList = [
     {
-        quote: "code can't lie comments can.",
+        quote: "Code can't lie comments can.",
     },
     {
         quote: "It's harder to read code than to write it.",
