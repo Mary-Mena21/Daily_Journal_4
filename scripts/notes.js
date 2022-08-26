@@ -32,4 +32,4 @@ const notes = [
 export const getNotes = () => {
         const notesCopy = notes.map((note) => ({ ...note }));
         return notesCopy;
-    };
+    }; 

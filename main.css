@@ -128,3 +128,6 @@ button:active {
 li {
     list-style: none;
 }
+hr{
+    margin-bottom: 30px;
+}
