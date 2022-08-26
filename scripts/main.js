@@ -32,31 +32,31 @@ const displayLearn = () => {
 };
 displayLearn();
 
+/* ---------------------------------Entries----   part_1-------------------------------*/
 
-import {getJournalEntries} from './entries.js';
-const entries = getJournalEntries();
+// import {getJournalEntries} from './entries.js';
+// const entries = getJournalEntries();
 
-let entriesHTML = '';
+// let entriesHTML = '';
 
-/* const returnEntries = (array) => {
-    for (const entry of array) {
-        entriesHTML += `
-        <p class="entry">
-        <span class="entryNumber">Entry #${entry.id}</span>
-        <span class="date">Date: ${entry.date}</span>
-        <span class="mood">Mood: ${entry.mood}</span>
-        <span class="concespant">Concepts: ${entry.concept}</span>
-        <span class="entryText">Entry: ${entry.entry}</span>
-        </p>`
-    }
-}
-returnEntries(entries);
+// const returnEntries = (array) => {
+//     for (const entry of array) {
+//         entriesHTML += `
+//         <p class="entry">
+//         <span class="entryNumber">Entry #${entry.id}</span>
+//         <span class="date">Date: ${entry.date}</span>
+//         <span class="mood">Mood: ${entry.mood}</span>
+//         <span class="concept">Concepts: ${entry.concept}</span>
+//         <span class="entryText">Entry: ${entry.entry}</span>
+//         </p>`
+//     }
+// }
+// returnEntries(entries);
 
-document.getElementById('entries').innerHTML = entriesHTML; */
+// document.getElementById('entries').innerHTML = entriesHTML;
 /* --------------------------------------Mood---entryMood--------------------------------     */
 
 const displayMoods = () => {
-
     const moodOptions = getMoods();
     let Options = ` `;
     for (let mood of moodOptions) {
