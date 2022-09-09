@@ -13,30 +13,43 @@ body {
     font-family: "Poiret One", "cursive";
     /* font-size: 2vmin; */
 }
+.logo_h1{
+    display: flex;
+    /* justify-content: center; */
+}
 .logo {
+    /* display: flex; */
+
+    /* display: inline; */
     border: 1px solid #ddd;
     border-radius: 10%;
-    margin: 5px;
+    /* margin: 5px; */
     padding: 3px;
-    display: flex;
-    justify-content: end;
+    display: inline;
+    /* justify-content: end; */
 }
 .name {
+    /* display: flex; */
     font-weight: bold;
     font-size: 40px;
     margin: 0px 10px;
-    text-align: center;
+    /* text-align: center; */
     font-family: "Poiret One", "cursive";
     color: #fff;
     text-shadow: 1px 1px 1px #272121;
 }
 h2 {
-    font-size: 60px;
-    margin: 10px;
+    /* display: flex; */
+    /* display: inline; */
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    /* margin: 10px; */
+    /* margin-left: 200px; */
     color:#551A8B/*  rgb(32, 23, 12) */;
     text-shadow: 2px 2px 4px #272121;
     /* -webkit-text-stroke: #e0c260 0.8px; */
-    text-align: center;
+    /* text-align: center; */
 }
 .container {
     border: 2px #925e49 solid;

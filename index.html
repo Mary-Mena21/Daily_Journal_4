@@ -19,40 +19,39 @@
   <body >
     <section class= "container">
       <header>
-        <img class="logo" 
-        src="img/Daily_Journal_Logo.jpeg"
-        alt="Daily_Journal_Logo"
-        style="width: 15%; height: 15%"
-        />
+       
         <!-- Form -->
         <form class="entryForm" id="form">
           <section class="quoteBlockForm">
-            <h1 class="name">Mariana Mena</h1>
+            <!-- <h1 class="name">Mariana Mena</h1> -->
             <!-- <input type="text" placeholder="entryDate"> -->
           </section>
-            <hr />
+            <!-- <hr /> -->
       </header>
+      <section class="logo_h1">
+      <img class="logo" 
+      src="img/Daily_Journal_Logo.jpeg"
+      alt="Daily_Journal_Logo"
+      style="width: 10%; height: 10%"
+      />
+      <!-- <h2>Daily Journal</h2> -->
+      <h1 class="name">Mariana Mena</h1>
+      
+    </section>
     <main >
+
       <section class="entry">
-        <h2>Daily Journal</h2>
 
           <!-- entryDate-->
           <fieldset class="entry__date" id="entryDate">
-            <!-- <label for="entryDate">Date</label>
-            <input class ="inputStyle" type="date" name="entryDate" class="entryForm__date" /> -->
           </fieldset>
 
           <!-- entryConcept-->
           <fieldset class="entry__concepts" id="entryConcept">
-            <!--  <label for="entryConcept">Concept Covered</label>
-            <input class ="inputStyle" type="text" name="entryConcept" class="entryForm__concept" /> -->
           </fieldset>
 
           <!-- entryLearn-->
           <fieldset class="entry__learn" id="entryLearn">
-            <!--<label   for="entryLearn">Journal Entry Learn</label>
-            <textarea class ="inputStyle" type="text" name="entryLearn" rows="10" >
-            </textarea> -->
           </fieldset>
 
           <!-- Mood Central-->
@@ -63,23 +62,23 @@
         </form>
       </section>
 
-      <hr/>
-        <!-- Notes button"-->
+      <!-- <hr/> -->
+        <!-- Notes button"------------------------>
         <section class="entry__button">
-          <button  type="button">Record Journal Entry</button>
+          <button id="submit" type="button">Record Journal Entry</button>
         </section>
         <!-- Notes-->
-        <section class= "content" id ="content"></section><!--  -->
+        <section class= "content" id ="content" value=""></section><!--  -->
         <hr/>
 
-          <!-- Quotes button"-->
+          <!-- Quotes button"---------------------->
         <section class="entry__button">
-          <button type="button">Record Quote</button>
+          <button id = "Quote" type="button">Record Quote</button>
         </section>       
-          <!-- Quotes EntryForm -->
+          <!-- Quotes label -->
         <fieldset class="entry__learn">
           <label   for="entryDate">Quote Entry</label>
-          <input type="text" class="inputStyle" placeholder="Coding Quote"/>
+          <input id= "quoteTextArea" type="text" class="inputStyle" placeholder="Coding Quote" value=""/>
         </fieldset>
           <!-- Quotes-->
         <section id="listComponent"></section><!--  -->
