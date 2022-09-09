@@ -1,105 +1,53 @@
 
-# Daily_Journal_3
-![Daily_Journal_3](https://user-images.githubusercontent.com/85176043/185466373-4e5f2c06-7ee8-4d77-bb56-696bbbe0f62c.jpeg)
+# Daily_Journal_4
 
-# **Daily Journal Part 3**
+![Daily_Journal_4](https://user-images.githubusercontent.com/85176043/189435757-691c5156-d3bd-4fea-8cbe-3dba4108678a.jpg)
 
-The daily journal currently has HTML, CSS and JavaScript, but the JavaScript is not linked to the HTML. In this part, we are going to refactor the project a bit to:
 
-1. Display previous journal entries on the screen.
-2. Encapsulate our code inside functions.
-3. Bring the Journal Entries into the JavaScript file from another source.
+# **Daily Journal Part 4**
 
-### **Display Previous journal entries on the screen**
+In this section of Daily Journal, we’ll finally start collecting data from our form!  
 
-Iteration is a great way to show how to display a list of elements on the screen. We've learned most of the tools to do this including:
+Here’s the Steps:
 
-- adding to the value of a string using the `+=` of a variable
-- string interpolation to include that value a variable represents in the string
-- using `document.getElementById` and `.innerHTML` to add a string created in JavaScript to the DOM.
+1. Add the Event Listener
+2. Capture the data from the form
+3. Add the new entry to the array of objects
+4. Display the new entry on the page
 
-Using these tools and the `<article id="entries"></article>` element you created in Part 1 of this project, create a string of html elements in your `main.js` file and add that string to the DOM.
+### Add the Event Listener
 
-The image below shows the most basic example of entries on the page. Feel free to add as much style as you like to your journal.       
+First things first, let’s add an event listener to our JavaScript and make it specific to the button click.
 
-![https://github.com/nashville-software-school/client-side-mastery/raw/E20/CourseMaterial/Sprint_2/images/DailyJournal_Part3_IMG.PNG](https://github.com/nashville-software-school/client-side-mastery/raw/E20/CourseMaterial/Sprint_2/images/DailyJournal_Part3_IMG.PNG)
+1. Make sure there is an id on the button element in the html
+2. Create an event listener specific to your button id.  For now, just add a console.log to test that your event is only firing when you click the button.  Be sure to test clicking on the page outside of the button.
+3. Don’t forget to add `e.preventDefault()` as the first line inside the event listener to prevent any browser action that may happen on this event.
 
-### **Encapsulate our code inside functions**
+### Capture the data from the form
 
-While iterating over an array and displaying our data was the visual goal of this week, we also need to refactor some of the code. In your `main.js` file remove all the code that is not directly related do displaying the journal entries on the screen. Before starting, make sure you have a working version committed to GitHub and are on a new branch.
+In this step, we’ll be grabbing the data from the form and creating an object that has the same data structure as your journal entries.  
 
-Test your code as needed to make sure you did not accidentally remove an important piece.
+- Use `document.getElementById('<id in index.html element>').value` to grab the value of your input boxes.  Make sure the index.html has an id!
+- Look at the key/value pairs in a single journal entry object and create an object from your form that has the same keys EXCEPT the id (we’ll add that later).
+- At this step, console log the new object and confirm that it is what you expect.
 
-Now use your knowledge of functions to encapsulate your logic into functions that iterate over your entries and display them on the screen. Remember functions:
+### Add the new entry to the array of objects
 
-- should each do one thing
-- can be invoked from other functions
-- can take arguments
-- have their own scope and can encapsulate variables and eliminate the need for a global variable. Global variables can cause security vulnerabilities and inadvertently interfere with other code. We should avoid using global variables whenever possible.
+- Create a setter in the `entries.js` file
+- Call the setter from the event listener
 
-Using you knowledge of functions, refactor you code to:
+### Display the new entry on the page
 
-- include 2-3 functions
-- only 1 function is invoked in the global scope (others may be invoked inside functions)
-- has at least one function that takes in an argument
-- separates the logic with functionality.
+To finish off this part of Daily journal, make sure you:
 
-If you get stuck:
+- Create and Dispatch a custom event that is triggered after you added the new entry to the page.
+- Add an event listener for this custom event.  When activated, the event listener should invoke the function that adds the journal entries to the page.
 
-- Check errors in the console
-- Use dev tools to walk through what is going on
-- try to get a working solution first and then go back to refactor the code to meet the above requirements
-- ask teammate(s) to look at your code and help you
-- reach out to instructors with an example of your code
+Note: At this stage in the application, your new entries will not persist when you refresh the page.
 
-### **Bring the Journal Entries into the JavaScript file from another source**
+### Think Deeper
 
-In production-ready applications, our journal entries wouldn't be hard-coded into as a variable in JavaScript. They will come from a database and be delivered through an API or other technology that interacts with the database for us. For security reasons, the browser should never interact directly with a database!
+Once you have your code in place and working try to answer these questions.
 
-The last part of the project this week is to move the journal entries array of objects out of the main JavaScript file and import it from another file. To do this, follow the below steps:
-
-1. Create a file named `entries.js` and move your journalEntries object to the new file
-2. At the bottom of your `entries.js` file, add:
-
-```jsx
-  export const getJournalEntries = () => {
-    const copyOfEntries = journalEntries.map(entry => ({...entry}))
-    return copyOfEntries
-  }
-```
-
-1. At the top of your main.js file, add `import {getJournalEntries} from './entries.js'` on it's own line
-2. Where you had defined `journalEntries` previously, set that variable equal to `getJournalEntries()`
-
-**IMPORTANT** Once you get steps 1-4 working and at each point you get stuck, talk through (in your head, to your cat, to your non-technical friend/roommate/sibling/parent, to you classmate(s), to your instructor(s), to all of these) as many times as need what is happening with these changes.
-
-Can you:
-
-- find an array method
-- explain what `import` means and what is does
-- explain what `export` means and what is does
-- find function definitions
-    - find an argument in the definition
-- find functions being invoked
-    - find an argument when invoking a function
-    - find where the value of the argument came from
-- understand how the data is getting from one file to the other
-- understand how the variable holding the entries is getting the data
-
-## **Challenges (optional)**
-
-Here's some things you can try with your journal AFTER you finish the above. You do not need to do these in order. Read through them and pick a challenge you thinks looks interesting.
-
-1. Up to this point, you have had your journal entry form hard-coded in your `index.html` file. Your task for this exercise is update the application to have the form rendered from JavaScript.
-    - create the necessary functions needed
-    - provide an interaction with the DOM to render the form
-2. Write a function that takes in the date from the journal entry and returns the day of the week that entry occurred. Display the day of the week in the journal entry card.
-3. Create functions to sort your entries by date, mood or topic. Display on the DOM as you choose.
-4. Add a side bar (`<aside>` element) listing which moods you were on which days.
-    - List the dates under each mood and/or
-    - List the number of times you felt each mood
-5. Update your journal entries object to include the boolean 'favorite'. Update the DOM to highlight your favorite entries. Some ways include (not exhaustive, be creative):
-    - Display the background color on your favorite cards different from the non-favorites
-    - Display the favorite entries at the top
-    - Display the favorite entries on the sidebar/new view
-
+1. If the custom event re-invokes the functions and calls all entries again, why do you not see duplicates on the screen?
+2. What is the step-by-step process happening in the code that allows the user to add and entry and see it displayed on the screen?
