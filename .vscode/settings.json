@@ -1,5 +1,5 @@
 {
-    "liveServer.settings.port": 5502,
+    "liveServer.settings.port": 5503,
     "cSpell.enableFiletypes": ["log", "makefile"],
     "cSpell.words": ["Flexbox"],
     "workbench.tree.indent": 16,
